@@ -1,0 +1,28 @@
+{
+  "files.watcherExclude": {
+    "**/target": true
+  },
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "formatFiles.excludedFolders": [
+    ".bloop",
+    ".metals",
+    ".bsp",
+    ".vscode",
+    "node_modules",
+    ".git",
+    "dist",
+    ".chrome"
+  ],
+  "formatFiles.extensionsToInclude": "scala,sbt,java",
+  "java.server.launchMode": "Standard",
+  "java.format.enabled": true,
+  "java.format.settings.url": "file:.vscode/eclipse-java-google-esko-style.xml",
+  "java.compile.nullAnalysis.mode": "disabled",
+  "[java]": {
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "redhat.java"
+  }
+}

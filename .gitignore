@@ -1,0 +1,10 @@
+#VSCode
+.project
+.classpath
+.settings/
+.bloop
+.metals
+.bsp
+*.class
+target/
+metals-local.sbt
