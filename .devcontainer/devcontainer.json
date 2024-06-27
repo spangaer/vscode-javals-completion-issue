@@ -1,0 +1,28 @@
+{
+  "name": "vscode-javals-completion-issue",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.java",
+        "vscjava.vscode-java-debug",
+        "vscjava.vscode-java-test",
+        "vscjava.vscode-java-dependency",
+        "VisualStudioExptTeam.vscodeintellicode"
+      ],
+      "settings": {
+        "java.configuration.runtimes": [
+          {
+            "path": "/usr/lib/jvm/msopenjdk-current",
+            "name": "JavaSE-21",
+            "default": true
+          }
+        ]
+      }
+    }
+  },
+  "postStartCommand": "sbt clean update eclipse",
+  "waitFor": "postStartCommand"
+}
